@@ -9,12 +9,9 @@ int main()
     scanf("%d", &n);
 
     temp=n;
-
-    while(temp!=0)
-    {
+    for(;temp!=0;temp=temp/10){
         digit=temp%10;
         sum+=digit*digit*digit;
-        temp=temp/10;
     }
 
     if(sum==n)
